@@ -1,202 +1,171 @@
-la.container {
-    max-width: 120rem;
-    margin: 8rem auto;
-    background-color: var(--color-grey-light-2);
-    box-shadow: var(--shadow-dark);
-
-    min-height: 50rem ;
-
-    //before i had 8rem top and bottom and auto to center now to zero to remove the margin 
-    @media only screen  and (max-width: $bp-largest) {
-        margin: 0 ;
-        max-width: 100%;
-        width: 100%;
-    }
-       
-           
-}
-
-
 .header {
-    font-size: 1.4rem;
-    height: 7rem;
-    background-color: #fff;
-    border-bottom: var(--line);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  max-width: 100vw;
+  height: 20rem;
+  background-color: var(--color-secondary);
 
-    display: flex;
-    justify-content: space-between;
-    align-items: center ;
-
-    @media only screen and (max-width: $bp-smallest) {
-       flex-wrap: wrap;  // allow to wrsp to a new line if does not have enough space in flex container
-      align-content: space-around;
-       height: 11rem ;
-
-    }
-
-
+  display: flex;
+  flex-direction: column;
 }
 
-.content {   // content will our flex container cos hold sidebar and hotel view
-    display: flex;
+/************************ NAV*****************************/
+.nav {
+  flex: 0 0 80%;
+  max-width: 1695px;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  background-color: inherit;
+  padding: 0 1rem;
 
-    @media only screen  and (max-width: $bp-medium) {
-       flex-direction: column;
-    }
-
-
-}
-
-.sidebar {
-    background-color: var(--color-grey-dark-2);
-
-    flex:0 0 18% ;  //0 not to grown 0 not to shrink and 18% is the one i want to keep(navigation=18%)
-
+  display: flex;
+  flex-direction: row;
+  &-link {
+    flex: 0 0 50%;
+    height: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-}
- 
+    padding: 0 0 1rem 0;
 
-
-.hotel-view {
-background-color: #fff;
-
-flex: 1;
-
-}
-
-.detail {
-    font-size: 1.4rem;
-    display: flex;
-    padding: 4.5rem;
-    background-color: var(--color-grey-light-1);
-    border-bottom: var(--line);
-
-    @media only screen  and (max-width: $bp-medium) {
-        padding: 3rem; // i want the padd 3 rem and no longer 4.5rem
-     }
-
-    @media only screen  and (max-width: $bp-small) {
-        flex-direction: column;  // change from display:flex to flex-direction:column 
+    &-cta {
+      flex: 0 0 50%;
+      display: flex;
+      justify-content: flex-end;
+      align-items: flex-start;
     }
-}
+    &-links {
+      flex: 0 0 50%;
+      display: flex;
+      justify-content: flex-end;
+      align-items: flex-end;
 
-.description { 
-    background-color: #fff;
-    flex: 0 0 60%;
-    box-shadow: var(--shadow-medium);
-    padding: 3rem;
-    margin-right: 4.5rem;
-
-    @media only screen  and (max-width: $bp-medium) {
-        justify-content: center; //padd was 3rem and decrese to 2rem 
-        padding: 2rem;
-        margin-right: 3rem; //decrese from 4.5 to 3rem 
-     }
-
-     @media only screen  and (max-width: $bp-small) {
-        margin-right:0 ;
-        margin-bottom: 3rem;
-     }
-}
-
-.user-reviews {
-    flex: 1;
-
+    }
+  }
+  &-item {
+    flex: 0 0 50%;
     display: flex;
-    flex-direction: column;
+    justify-content: flex-start;
     align-items: center;
-    cursor: pointer;
-
-  
-
+  }
 }
 
-//////////////////////////////////////////////////////////
-///     PARAGRAPHY
-
-.paragraphy:not(:last-of-type) {
-    margin-bottom: 2rem;
+.nav-alert {
+  flex: 0 0 20%;
+  background-color: var(--color-primary);
+  min-height: 6rem;
+  max-width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+/************************ NAV END *****************************/
+.hero {
+  max-width: 1695px;
+  height: 80vh;
+  margin: 0 auto;
+  background-color: rgb(165, 187, 22);
 }
 
-//////////////////////////////////////////////////////////
-///     LIST
-
-.list {
-    list-style: none;
-    margin: 3rem;
-    padding: 3rem 0;
-    border-top: var(--line);
-    border-bottom: var(--line);
-
-    display: flex;
-    flex-wrap: wrap;
-    
-    
-    &__item {
-        flex: 0 0 50%;
-        margin-bottom: .7rem;
-    }
-
-    &__item::before {
-        content: "";
-        display: inline-block;
-        height: 1rem;
-        width: 1rem;
-        margin-right: .7rem;
-
-        //older the browsers
-        background-image: url(../img/chevron-thin-right.svg);
-        background-size: cover;
-
-        //newer browsers - masks
-        @supports (-webkit-mask-image:url() ) or (mask-image: url()) {
-            background-color: var(--color-primary);
-            -webkit-mask-image: url(../img/chevron-thin-right.svg);
-            mask-image: url(../img/chevron-thin-right.svg);
-            -webkit-mask-size: cover;
-            mask-size: cover;
-            background-image: none;
-    
-        }
-       
-    }
+/*********************** HERO END*****************************/
+.hero2 {
+  max-width: 1695px;
+  height: 80vh;
+  margin: 0 auto;
+  background-color: rgb(40, 103, 171);
 }
 
+.hero3 {
+  max-width: 1695px;
+  height: 80vh;
+  margin: 0 auto;
+  background-color: rgb(171, 40, 160);
+}
 
+.logo {
+  width: 25rem;
+  height: 3rem;
+  border: 1px solid #ddd;
+}
 
-//////////////////////////////////////////////////////////
-///     RECOMEND
+.nav ul li {
+  list-style: none;
+}
 
-.recomend {
-    font-size: 1.3rem;
-    color: var(--color-grey-dark-3);
+.nav ul li a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 1.4rem;
+  margin: 2rem;
+  font-weight: 300;
+  font-family: inherit;
+  text-transform: initial;
+  text-rendering: optimizeLegibility;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: all 0.2s;
 
-    display: flex;
-    align-items: center;
+  &:hover {
+    border-bottom: 2px solid #ddd;
+    color: var(--color-primary);
+  }
+}
 
+#open {
+  color: #ffffff;
+  font-size: 2rem;
+  font-weight: 600;
+  font-family: inherit;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
 
-    &__count {
-        margin-right: auto;
-    }
+#open-1 {
+  color: #ffffff;
+  font-size: 1.4rem;
+  font-weight: 400;
+  font-family: inherit;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
 
-    &__friends {
-        display: flex;
-    }
+.banner-btn,
+.banner-btn-1 {
+  padding: 1rem 6rem;
+  margin: 0 1rem;
+  background-color: var(--color-primary);
+  border: 1px solid var(--color-primary);
+  border-radius: 0rem;
+  font-weight: 400;
+  font-family: inherit;
+  font-size: 1.4rem;
+  letter-spacing: 2px;
+  color: rgb(252, 245, 245);
+  cursor: pointer;
+  text-transform: uppercase;
+  box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.1);
+  transition: all 0.2s;
+}
 
+.banner-btn-1 {
+  background-color: rgb(66, 83, 97);
+  border: 1px solid  rgb(66, 83, 97);
+}
 
-    &__photo {
-        box-sizing: content-box;
-        height: 4rem;
-        width: 4rem;
-        border-radius: 50%;
-        border: 3px solid #fff;
+.banner-btn,
+.banner-btn-1:focus {
+  outline: none;
+}
 
-        &:not(:last-child) {
-            margin-right: -2rem;
-        }
+.banner-btn:hover {
+  color: rgb(0, 0, 0);
+  background-color: rgb(255, 255, 255);
+}
 
-    }
-
+.banner-btn-1:hover {
+  color: rgb(0, 0, 0);
+  background-color: rgb(255, 255, 255);
 }

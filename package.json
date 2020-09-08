@@ -1,7 +1,7 @@
 {
-  "name": "Trillo",
+  "name": "mont-pierre",
   "version": "1.0.0",
-  "description": "Trillo app",
+  "description": "Mont-Pierre Restaurant",
   "main": "index.js",
   "scripts": {
     "watch:sass": "node-sass sass/main.scss css/style.css -w",
@@ -19,6 +19,6 @@
     "concat": "^1.0.3",
     "node-sass": "^4.5.3",
     "npm-run-all": "^4.1.1",
-    "postcss-cli": "^4.1.1"
+    "postcss-cli": "^7.1.2"
   }
 }

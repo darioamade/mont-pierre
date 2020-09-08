@@ -1,0 +1,188 @@
+:root {
+  --color-primary: #3cb371;
+  --color-secondary: #2D3047;
+  --color-primary-dark: rgb(65, 38, 186);
+  --color-red-light: #FF3366;
+  --color-gainsboro: #E5DADA;
+  --color-grey-light-1: #faf9f9;
+  --color-grey-light-2: #f4f2f2;
+  --color-grey-light-3: #f0eeee;
+  --color-grey-light-4: #ccc;
+  --color-grey-light-5: #fffbfb;
+  --color-grey-dark-1: #333;
+  --color-grey-dark-2: #777;
+  --color-grey-dark-3: #999;
+  --shadow-dark: 0 2rem 6rem rgba(0,0,0,.3);
+  --shadow-medium: 0 2rem 5rem rgba(0, 0, 0, 0.185);
+  --shadow-light: 0 2rem 5rem rgba(0,0,0,.06);
+  --line: 1px solid var(--color-grey-light-2); }
+
+* {
+  margin: 0;
+  padding: 0; }
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit; }
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; }
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  line-height: 1.6;
+  color: var(--color-grey-dark-2);
+  background-color: var(--color-grey-light-1);
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 100vh; }
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  max-width: 100vw;
+  height: 20rem;
+  background-color: var(--color-secondary);
+  display: flex;
+  flex-direction: column; }
+
+/************************ NAV*****************************/
+.nav {
+  flex: 0 0 80%;
+  max-width: 1695px;
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  background-color: inherit;
+  padding: 0 1rem;
+  display: flex;
+  flex-direction: row; }
+  .nav-link {
+    flex: 0 0 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 0 0 1rem 0; }
+    .nav-link-cta {
+      flex: 0 0 50%;
+      display: flex;
+      justify-content: flex-end;
+      align-items: flex-start; }
+    .nav-link-links {
+      flex: 0 0 50%;
+      display: flex;
+      justify-content: flex-end;
+      align-items: flex-end; }
+  .nav-item {
+    flex: 0 0 50%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center; }
+
+.nav-alert {
+  flex: 0 0 20%;
+  background-color: var(--color-primary);
+  min-height: 6rem;
+  max-width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center; }
+
+/************************ NAV END *****************************/
+.hero {
+  max-width: 1695px;
+  height: 80vh;
+  margin: 0 auto;
+  background-color: #a5bb16; }
+
+/*********************** HERO END*****************************/
+.hero2 {
+  max-width: 1695px;
+  height: 80vh;
+  margin: 0 auto;
+  background-color: #2867ab; }
+
+.hero3 {
+  max-width: 1695px;
+  height: 80vh;
+  margin: 0 auto;
+  background-color: #ab28a0; }
+
+.logo {
+  width: 25rem;
+  height: 3rem;
+  border: 1px solid #ddd; }
+
+.nav ul li {
+  list-style: none; }
+
+.nav ul li a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 1.4rem;
+  margin: 2rem;
+  font-weight: 300;
+  font-family: inherit;
+  text-transform: initial;
+  text-rendering: optimizeLegibility;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: all 0.2s; }
+  .nav ul li a:hover {
+    border-bottom: 2px solid #ddd;
+    color: var(--color-primary); }
+
+#open {
+  color: #ffffff;
+  font-size: 2rem;
+  font-weight: 600;
+  font-family: inherit;
+  text-transform: uppercase;
+  letter-spacing: 1px; }
+
+#open-1 {
+  color: #ffffff;
+  font-size: 1.4rem;
+  font-weight: 400;
+  font-family: inherit;
+  text-transform: uppercase;
+  letter-spacing: 0.5px; }
+
+.banner-btn,
+.banner-btn-1 {
+  padding: 1rem 6rem;
+  margin: 0 1rem;
+  background-color: var(--color-primary);
+  border: 1px solid var(--color-primary);
+  border-radius: 0rem;
+  font-weight: 400;
+  font-family: inherit;
+  font-size: 1.4rem;
+  letter-spacing: 2px;
+  color: #fcf5f5;
+  cursor: pointer;
+  text-transform: uppercase;
+  box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.1);
+  transition: all 0.2s; }
+
+.banner-btn-1 {
+  background-color: #425361;
+  border: 1px solid #425361; }
+
+.banner-btn,
+.banner-btn-1:focus {
+  outline: none; }
+
+.banner-btn:hover {
+  color: black;
+  background-color: white; }
+
+.banner-btn-1:hover {
+  color: black;
+  background-color: white; }

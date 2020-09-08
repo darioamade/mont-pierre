@@ -1,10 +1,13 @@
 
 
 :root {
-    --color-primary: #0e9287;
-    --color-primary-light : rgb(51, 255, 238);
+    --color-primary: #3cb371;
+    --color-secondary : #2D3047;
     --color-primary-dark : rgb(65, 38, 186);
     --color-red-light : #FF3366;
+    --color-gainsboro : #E5DADA;
+
+
 
     --color-grey-light-1: #faf9f9;
     --color-grey-light-2: #f4f2f2;
@@ -25,9 +28,9 @@
 }
 
 //1200px/16=75em 
-$bp-largest: 75em;  //now i am using sass variables cos css dont allow to use  css proprets and bp=brakpoints
-$bp-large: 68.75em; //my next bp is at 1100px which is 1100/16=68.75em
-$bp-medium: 56.25em;     //900px/16px=56.25
+$bp-largest: 75em;  
+$bp-large: 68.75em; 
+$bp-medium: 56.25em;  
 $bp-small: 37.5em ;      
 $bp-smallest: 31.25em ;                              
 
@@ -46,12 +49,7 @@ $bp-smallest: 31.25em ;
 
 html {
     box-sizing: border-box;
-    font-size: 62.5%;   //1rem=10px, 10px/16px=62.5% i define 1rem=10px
-
-    @media only screen and (max-width: $bp-large) {
-        font-size: 50% ;  // 1rem=8px     8px/16px= 50%  to decrese the font size  i define here 1rem=8px
-
-    }
+    font-size: 62.5%;  
 }
 
 body {
@@ -59,9 +57,9 @@ body {
    font-weight: 400;
    line-height: 1.6;
    color: var(--color-grey-dark-2);
-   background-image: linear-gradient(to right bottom, var(--color-primary-light), var(--color-primary-dark));
+   background-color: var(--color-grey-light-1);
+   //background-image: linear-gradient(to right bottom, var(--color-primary-light), var(--color-primary-dark));
    background-size: cover;
    background-repeat: no-repeat;
-
    min-height: 100vh;
 } 
