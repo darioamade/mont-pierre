@@ -70,20 +70,6 @@
 }
 
 /*********************** HERO END*****************************/
-.hero2 {
-  max-width: 1695px;
-  height: 80vh;
-  margin: 0 auto;
-  background-color: rgb(40, 103, 171);
-}
-
-.hero3 {
-  max-width: 1695px;
-  height: 80vh;
-  margin: 0 auto;
-  background-color: rgb(171, 40, 160);
-}
-
 .logo {
   width: 25rem;
   height: 3rem;
@@ -129,6 +115,7 @@
   font-family: inherit;
   text-transform: uppercase;
   letter-spacing: 0.5px;
+  cursor: pointer;
 }
 
 .banner-btn,
@@ -269,3 +256,18 @@
   background-position: center;
   background-size: cover;
 }
+
+/*********************** Section-1***********************/
+.about{
+  max-width: 1695px;
+  margin: 0 auto;
+  padding: 4rem 0;
+  height: 100vh;
+  background-color:red;
+  & h1 {
+    color: #000;
+  }
+
+}
+
+

@@ -103,18 +103,6 @@ body {
   position: relative; }
 
 /*********************** HERO END*****************************/
-.hero2 {
-  max-width: 1695px;
-  height: 80vh;
-  margin: 0 auto;
-  background-color: #2867ab; }
-
-.hero3 {
-  max-width: 1695px;
-  height: 80vh;
-  margin: 0 auto;
-  background-color: #ab28a0; }
-
 .logo {
   width: 25rem;
   height: 3rem;
@@ -153,7 +141,8 @@ body {
   font-weight: 400;
   font-family: inherit;
   text-transform: uppercase;
-  letter-spacing: 0.5px; }
+  letter-spacing: 0.5px;
+  cursor: pointer; }
 
 .banner-btn,
 .banner-btn-1 {
@@ -254,3 +243,13 @@ body {
   opacity: 0.5;
   background-position: center;
   background-size: cover; }
+
+/*********************** Section-1***********************/
+.about {
+  max-width: 1695px;
+  margin: 0 auto;
+  padding: 4rem 0;
+  height: 100vh;
+  background-color: red; }
+  .about h1 {
+    color: #000; }
